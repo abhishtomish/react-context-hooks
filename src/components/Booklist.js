@@ -6,7 +6,6 @@ class Booklist extends Component {
     render() { 
         const { isLightTheme, light, dark } = this.context;
         const theme = isLightTheme ? light : dark;
-        console.log(theme.bg)
         return (
             <div className='book-list' style={{ color: theme.syntax, background: theme.bg }} >
                 <ul>
